@@ -59,6 +59,7 @@ function create_user -a user group shell
     end
 
     useradd (string split $separator $useradd_opts)
+    passwd $user
 end
 
 create_env $argv
